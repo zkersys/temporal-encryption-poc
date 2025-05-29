@@ -15,8 +15,6 @@ class WorkflowClientProducer(
 
     @Produces
     fun workflowClient(): WorkflowClient {
-        println("HERE")
-        println(dataConverter)
         return WorkflowClient.newInstance(
             WorkflowServiceStubs.newServiceStubs(WorkflowServiceStubsOptions.getDefaultInstance()),
             WorkflowClientOptions.newBuilder()

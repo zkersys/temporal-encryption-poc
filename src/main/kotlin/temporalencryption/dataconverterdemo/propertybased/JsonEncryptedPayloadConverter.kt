@@ -1,4 +1,4 @@
-package temporalencryption.dataconverterdemo
+package temporalencryption.dataconverterdemo.propertybased
 
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper

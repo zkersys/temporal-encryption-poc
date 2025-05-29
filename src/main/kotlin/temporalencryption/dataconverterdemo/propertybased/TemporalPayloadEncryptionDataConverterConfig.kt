@@ -1,4 +1,4 @@
-package temporalencryption.dataconverterdemo
+package temporalencryption.dataconverterdemo.propertybased
 
 import io.smallrye.config.ConfigMapping
 import io.smallrye.config.WithName

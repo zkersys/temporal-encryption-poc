@@ -18,4 +18,4 @@ temporal-payload-encryption:
     enabled: true
     exclude-keywords: string,uuid,bigDecimal
   codec-approach:
-    enabled: true
+    enabled: false
