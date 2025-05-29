@@ -1,0 +1,21 @@
+quarkus:
+  http:
+    port: 8081
+    cors:
+      ~: true
+      origins: http://localhost:8080
+      methods: GET,POST,OPTIONS
+      headers: Content-Type,X-Namespace,Authorization
+      exposed-headers: Content-Type,X-Namespace,Authorization
+      access-control-allow-credentials: true
+  resteasy-reactive:
+    json:
+      default: jackson
+
+
+temporal-payload-encryption:
+  data-converter-approach:
+    enabled: true
+    exclude-keywords: string,uuid,bigDecimal
+  codec-approach:
+    enabled: true
