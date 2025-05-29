@@ -1,18 +1,21 @@
 Steps to set up:
 
 To run the temporal containers, run the following commands in the project directory:
+```
 git clone https://github.com/temporalio/docker-compose
 cd docker-compose
 docker-compose up
+```
 
 To run the encryption PoC project, run the following:
-./gradlew build quarkusDev
+`./gradlew build quarkusDev`
 
 Temporal UI should be accessible via browser, localhost:8080
 The PoC project runs under localhost:8081
 
 E.g. command to start workflow:
 
+```
 curl --location 'localhost:8081/workflow' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -23,4 +26,5 @@ curl --location 'localhost:8081/workflow' \
     "bigDecimal": 20.5,
     "date": "2025-03-01"
 }'
+```
 
