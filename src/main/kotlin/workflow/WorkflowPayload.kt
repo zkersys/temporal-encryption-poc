@@ -1,4 +1,4 @@
-package org.example.workflow
+package workflow
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import temporalencryption.dataconverterdemo.annotationbased.TemporalEncrypted
@@ -10,7 +10,8 @@ data class WorkflowPayload(
     @JsonProperty("uuid") val uuid: UUID,
     @JsonProperty("string") @TemporalEncrypted val string: String,
     @JsonProperty("int") val int: Int,
-    @JsonProperty("listOfStrings") val listOfStrings: List<String>,
+    @JsonProperty("listOfStrings") @TemporalEncrypted val listOfStrings: List<String>,
     @JsonProperty("bigDecimal") val bigDecimal: BigDecimal,
-    @JsonProperty("date") val date: Date
+    @JsonProperty("date") @TemporalEncrypted val date: Date,
+    @JsonProperty("workflowPayload") @TemporalEncrypted val workflowPayload: WorkflowPayload?
 )

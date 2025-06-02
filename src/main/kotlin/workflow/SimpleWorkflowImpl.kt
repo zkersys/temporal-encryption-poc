@@ -1,4 +1,4 @@
-package org.example.workflow
+package workflow
 
 import io.quarkiverse.temporal.TemporalWorkflow
 import io.temporal.workflow.Workflow

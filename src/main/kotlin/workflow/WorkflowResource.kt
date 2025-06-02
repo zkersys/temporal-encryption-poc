@@ -1,4 +1,4 @@
-package org.example.workflow
+package workflow
 
 import io.temporal.client.WorkflowClient
 import io.temporal.client.WorkflowOptions
